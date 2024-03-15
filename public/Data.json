@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/XpjXW8f/Rectangle-20170.jpg",
+      "title": "Spaghetti Bolognese Pasta",
+      "description": "Classic Italian pasta dish with rich tomato meat sauce.",
+      "ingredients": [
+        "500g ground beef",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "400g spaghetti pasta",
+        "400g canned tomatoes",
+        "50g grated Parmesan cheese"
+      ],
+      "time": 40,
+      "calories": 450
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/GkfSMSm/images-3.jpg",
+      "title": "Chicken Stir-Fry",
+      "description": "Quick and easy Asian-inspired dish with tender chicken and crisp vegetables.",
+      "ingredients": [
+        "400g chicken breast, sliced",
+        "1 bell pepper, sliced",
+        "1 cup broccoli florets",
+        "2 carrots, julienned",
+        "3 tbsp soy sauce",
+        "2 tbsp sesame oil"
+      ],
+      "time": 25,
+      "calories": 320
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/PmCs2HZ/Rectangle-20170.png",
+      "title": "Caprese Salad",
+      "description": "Fresh and vibrant salad featuring ripe tomatoes, mozzarella, and basil leaves.",
+      "ingredients": [
+        "3 large tomatoes, sliced",
+        "200g fresh mozzarella cheese, sliced",
+        "1/4 cup fresh basil leaves",
+        "2 tbsp balsamic vinegar",
+        "2 tbsp extra virgin olive oil",
+        "Salt and pepper to taste"
+      ],
+      "time": 15,
+      "calories": 250
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/zf07nSP/mixed-vegetable-curry-89572-1.jpg",
+      "title": "Vegetable Curry",
+      "description": "Hearty and flavorful vegetarian curry with mixed vegetables and aromatic spices.",
+      "ingredients": [
+        "2 potatoes, diced",
+        "1 cup cauliflower florets",
+        "1 cup green peas",
+        "1 carrot, diced",
+        "1 onion, chopped",
+        "2 tbsp curry powder"
+      ],
+      "time": 35,
+      "calories": 280
+    }
+  ]
+  
