@@ -22,10 +22,10 @@ console.log(wantToCookItems)
       <RecipeHeading></RecipeHeading>
       <div className='container mx-auto flex gap-3'>
         <Recipes handleAddToCook={handleAddToCook}></Recipes>
-        <HandleWantToCookBtn ></HandleWantToCookBtn>
+       <HandleWantToCookBtn wantToCookItems={wantToCookItems}></HandleWantToCookBtn>
+        
+        
       </div>
-      
-
     </>
   )
 }

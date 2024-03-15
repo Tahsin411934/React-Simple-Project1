@@ -62,6 +62,38 @@
       ],
       "time": 35,
       "calories": 280
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/zf07nSP/mixed-vegetable-curry-89572-1.jpg",
+      "title": "Vegetable Curry",
+      "description": "Hearty and flavorful vegetarian curry with mixed vegetables and aromatic spices.",
+      "ingredients": [
+        "2 potatoes, diced",
+        "1 cup cauliflower florets",
+        "1 cup green peas",
+        "1 carrot, diced",
+        "1 onion, chopped",
+        "2 tbsp curry powder"
+      ],
+      "time": 35,
+      "calories": 280
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/zf07nSP/mixed-vegetable-curry-89572-1.jpg",
+      "title": "Vegetable Curry",
+      "description": "Hearty and flavorful vegetarian curry with mixed vegetables and aromatic spices.",
+      "ingredients": [
+        "2 potatoes, diced",
+        "1 cup cauliflower florets",
+        "1 cup green peas",
+        "1 carrot, diced",
+        "1 onion, chopped",
+        "2 tbsp curry powder"
+      ],
+      "time": 35,
+      "calories": 280
     }
   ]
   

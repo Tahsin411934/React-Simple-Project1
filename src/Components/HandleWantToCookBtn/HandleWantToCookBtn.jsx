@@ -1,12 +1,17 @@
-import React from 'react'
+
 import PropTypes from 'prop-types'
 
-const HandleWantToCookBtn = () => {
+const HandleWantToCookBtn = ({wantToCookItems}) => {
+  console.log(wantToCookItems)
   return (
     <div className='w-2/5'>
-        <h1 className="text-xl font-bold text-center mb-8 pt-16">
-          Want To Cook 01
-        </h1>
+    <h1 className="text-xl font-bold text-center mb-8 pt-16">
+  Want To Cook {wantToCookItems.length > 10 ? wantToCookItems.length : `0${wantToCookItems.length}`}
+</h1>
+
+
+
+       
       <div className="">
   <table className="table">
     {/* head */}
@@ -14,19 +19,27 @@ const HandleWantToCookBtn = () => {
       <tr>
         <th></th>
         <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Time</th>
+        <th>Calories</th>
       </tr>
     </thead>
     <tbody>
-      {/* row 1 */}
-      <tr className="bg-base-200">
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+    {
+  wantToCookItems.map((wantToCookItem,index)=> (
+    <tr key={wantToCookItem.id} className="bg-base-200">
+      <th>{index+1}</th>
+      <td>{wantToCookItem.title}</td>
+      <td>{wantToCookItem.time} Minutes</td>
+      <td>{wantToCookItem.calories} calories</td>
+      <td>
         <button className='btn bg-[#0BE58A]'>Preparing</button>
-      </tr>
+      </td>
+    </tr>
+  ))
+}
+
+     
+      
       
     </tbody>
   </table>
@@ -36,7 +49,7 @@ const HandleWantToCookBtn = () => {
 }
 
 HandleWantToCookBtn.propTypes = {
-
+  wantToCookItems: PropTypes.array
 }
 
 export default HandleWantToCookBtn
