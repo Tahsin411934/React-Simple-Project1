@@ -45,11 +45,12 @@ function App() {
   return (
     <>
       <Header></Header>
+      
       <Banner></Banner>
       <RecipeHeading></RecipeHeading>
       <div className="container mx-auto lg:flex gap-3"> 
         <Recipes handleAddToCook={handleAddToCook}></Recipes>
-        <div className="lg:w-2/5">
+        <div className="lg:w-2/5 shadow-lg ml-2">
           <HandleWantToCookBtn
             wantToCookItems={wantToCookItems}
             handleCokingBtn={handleCokingBtn}

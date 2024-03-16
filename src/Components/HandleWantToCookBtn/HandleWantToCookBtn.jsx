@@ -10,11 +10,9 @@ const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
 
   return (
     <div >
-      <h1 className="text-xl font-bold text-center mb-8 ">
-        Want To Cook{" "}
-        {wantToCookItems.length > 10
-          ? wantToCookItems.length
-          : `0${wantToCookItems.length}`}
+      <h1 className="text-xl font-bold text-center mb-8 text-[#282828]">
+        Want To Cook: {wantToCookItems.length}
+        <hr className="w-[40%] border-solid border-b  border-[#2828281A] " />
       </h1>
       <div className="">
         <table className="table">
@@ -30,9 +28,9 @@ const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
           <tbody>
             {wantToCookItems.map((wantToCookItem, index) => (
               
-              <tr key={wantToCookItem.id} className="bg-base-200 text-base font-normal" style={{color:"rgba(40, 40, 40, 0.7)"}}>
+              <tr key={wantToCookItem.id} className="bg-[#28282808] text-base font-normal" style={{color:"rgba(40, 40, 40, 0.7)"}}>
                 <th>{index + 1}</th>
-                <td>{wantToCookItem.title}</td>
+                <td>{wantToCookItem.name}</td>
                 <td>{wantToCookItem.time} Minutes</td>
                 <td>{wantToCookItem.calories} calories</td>
                 <td>

@@ -5,9 +5,10 @@ const HandleCookingBtn = ({cookItems}) => {
   const totalCalories = cookItems.reduce(( preTotalCalories, cookItem) => preTotalCalories + cookItem.calories, 0);
   return (
     <div>
-      <h1 className="text-xl font-bold text-center mb-8 ">
+      <h1 className="text-xl font-bold text-center  text-[#282828]">
       Currently cooking: {cookItems.length}
       </h1>
+      <hr className="w-[50%] border-solid border-b  border-[#2828281A] " />
       <table className="table">
          
           <thead>
@@ -21,9 +22,9 @@ const HandleCookingBtn = ({cookItems}) => {
           <tbody>
             {cookItems.map((cookItem, index) => (
               
-              <tr key={cookItem.id} className="bg-base-200 text-base font-normal" style={{color:"rgba(40, 40, 40, 0.7)"}}>
+              <tr key={cookItem.id} className="bg-[#28282808] text-base font-normal" style={{color:"rgba(40, 40, 40, 0.7)"}}>
                 <th>{index + 1}</th>
-                <td>{cookItem.title}</td>
+                <td>{cookItem.name}</td>
                 <td>{cookItem.time} Minutes</td>
                 <td>{cookItem.calories} calories</td>  
               </tr>
@@ -31,8 +32,8 @@ const HandleCookingBtn = ({cookItems}) => {
             <tr className="bg-base-200 text-base font-normal" style={{color:"rgba(40, 40, 40, 0.7)"}}>
             <td></td>
             <td></td>
-            <td>Total time= {totalTime} Minutes</td>
-            <td>Total time= {totalCalories} Calories</td>
+            <td className=''>Total time = {totalTime}   Minutes</td>
+            <td>Total time = {totalCalories} Calories</td>
             </tr>
           </tbody>
         </table>
