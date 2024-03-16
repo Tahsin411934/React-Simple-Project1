@@ -41,7 +41,9 @@ const Header = () => {
           </ul>
         </div>
 
-        <h1 className="lg:text-4xl text-2xl font-bold text-[#150B2B]">Kitchen Kick</h1>
+        <h1 className="lg:text-4xl text-2xl font-bold text-[#150B2B]">
+          Kitchen Kick
+        </h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[--li-color] text-lg font-normal">
@@ -62,11 +64,18 @@ const Header = () => {
 
       <div className="navbar-end">
         <div className="input h-[100%] bg-[--navSearchBg-color] p-2 lg:flex justify-center items-center mr-3 hidden">
-          <div className="-mb-1" > <IoSearch /></div>
-          <input type="text" placeholder="Search" className="border-none ml-2 text-xl" />
+          <div className="-mb-1">
+            {" "}
+            <IoSearch />
+          </div>
+          <input
+            type="text"
+            placeholder="Search"
+            className="border-none ml-2 text-xl"
+          />
         </div>
         <a className="btn  rounded-[50%] bg-[#0BE58A]">
-          < FaRegUserCircle />
+          <FaRegUserCircle />
         </a>
       </div>
     </div>

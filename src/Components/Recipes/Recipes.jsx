@@ -1,18 +1,15 @@
+//All Import
 import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
 import PropTypes from "prop-types";
-const Recipes = ({handleAddToCook}) => {
-  const [recipes, setRecipes] = useState([]);
 
+const Recipes = ({handleAddToCook}) => {
+const [recipes, setRecipes] = useState([]);
   useEffect(() => {
     fetch("Data.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);
-
- 
-
-
 
   return (
     <div className="lg:w-3/5">
@@ -26,6 +23,7 @@ const Recipes = ({handleAddToCook}) => {
   );
 };
 
+//propType validation
 Recipes.propTypes = {
     handleAddToCook:PropTypes.func.isRequired
 };

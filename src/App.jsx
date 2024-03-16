@@ -13,9 +13,7 @@ function App() {
   const [wantToCookItems, setWantToCookItems] = useState([]);
   const [cookItems, setCookItems] = useState([]);
 
-
-
-
+//'Add to cook' button functionality
   const handleAddToCook = (recipe) => {
     const addwantToCookItems = [...wantToCookItems, recipe];
     const isExit = wantToCookItems.find((item) => item.id == recipe.id);
@@ -27,11 +25,7 @@ function App() {
   };
 
 
-  
-
-
-
-
+//Cooking(preparing) button functionality
   const handleCokingBtn = (wantToCookItem) => {
     setCookItems([...cookItems, wantToCookItem]);
     const setItem = wantToCookItems.filter(
@@ -40,14 +34,14 @@ function App() {
     setWantToCookItems(setItem);
   };
 
-  console.log(cookItems);
+
 
   return (
     <>
       <Header></Header>
-      
       <Banner></Banner>
       <RecipeHeading></RecipeHeading>
+      
       <div className="container mx-auto lg:flex gap-3"> 
         <Recipes handleAddToCook={handleAddToCook}></Recipes>
         <div className="lg:w-2/5 shadow-lg ml-2">

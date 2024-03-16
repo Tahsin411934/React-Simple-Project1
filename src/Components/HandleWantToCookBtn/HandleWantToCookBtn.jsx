@@ -3,11 +3,8 @@ import PropTypes from "prop-types";
 
 const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
  
-
-
-
- 
-
+  //return Want to cook section
+  
   return (
     <div >
       <h1 className="text-xl font-bold text-center mb-8 text-[#282828]">
@@ -47,6 +44,8 @@ const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
     
   );
 };
+
+//propType Validation
 
 HandleWantToCookBtn.propTypes = {
   wantToCookItems: PropTypes.array.isRequired,

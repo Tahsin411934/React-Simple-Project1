@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types'
 const HandleCookingBtn = ({cookItems}) => {
 
+  //Calculate Total Time and  calories
   const totalTime = cookItems.reduce(( preTotal, cookItem) => preTotal + cookItem.time, 0);
   const totalCalories = cookItems.reduce(( preTotalCalories, cookItem) => preTotalCalories + cookItem.calories, 0);
+  
+//Return Currently cooking section
   return (
     <div>
       <h1 className="text-xl font-bold text-center  text-[#282828]">
@@ -41,6 +44,7 @@ const HandleCookingBtn = ({cookItems}) => {
   )
 }
 
+//PropTypes Validation
 HandleCookingBtn.propTypes = {
     cookItems: PropTypes.array.isRequired
 }

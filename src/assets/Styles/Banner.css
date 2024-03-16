@@ -1,8 +1,4 @@
-:root {
-    --li-color: rgba(21, 11, 43, 0.7);
-    --navSearchBg-color: rgba(21, 11, 43, 0.05);
-   
-}
+
 
 .gradient{
     background-image: linear-gradient(to right, rgba(4, 0, 10, 0.9) , rgba(4, 0, 10, 1));
