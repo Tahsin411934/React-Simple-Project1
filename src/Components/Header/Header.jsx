@@ -1,4 +1,4 @@
-import { FaSearchengin } from "react-icons/fa6";
+import { IoSearch } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
 import "../../assets/Styles/Header.css";
 const Header = () => {
@@ -61,13 +61,12 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <div className="input h-[100%] bg-[--navSearchBg-color] p-2 lg:flex justify-center mr-3 hidden">
-          <div className="-mb-1" > <FaSearchengin /></div>
-         
-          <input type="text" placeholder="Type here" className="border-none ml-2" />
+        <div className="input h-[100%] bg-[--navSearchBg-color] p-2 lg:flex justify-center items-center mr-3 hidden">
+          <div className="-mb-1" > <IoSearch /></div>
+          <input type="text" placeholder="Search" className="border-none ml-2 text-xl" />
         </div>
-        <a className="btn rounded-[50%] bg-[#0BE58A]">
-          <FaRegUserCircle />
+        <a className="btn  rounded-[50%] bg-[#0BE58A]">
+          < FaRegUserCircle />
         </a>
       </div>
     </div>

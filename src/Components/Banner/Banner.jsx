@@ -1,12 +1,12 @@
 import "../../assets/Styles/Banner.css";
-import bannerImage from "../../../public/Images/pexels-gary-barnes-6249032.jpg";
+import bannerImage from "../../../public/Images/bannerImage.png";
 
 const Banner = () => {
   return (
 
-    <div className="border-solid border-2 border-sky-500 h-[650px] gra container mx-auto rounded-[2rem]">
+    <div className="border-solid border-2 border-sky-500 h-[600px] gra container mx-auto rounded-[2rem]">
       <div
-        className="hero h-[650px] bg-cover rounded-[2rem] bg-no-repeat grad bg-top"
+        className="hero h-[600px] bg-cover rounded-[2rem] bg-no-repeat grad bg-top"
         style={{ backgroundImage: `url(${bannerImage})` }}
       >
       <div className=" text-center text-neutral-content">
