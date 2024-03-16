@@ -12,12 +12,14 @@ const Recipe = ({ recipe,handleAddToCook }) => {
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
           <p>{description}</p>
-          <p>{ingredients}</p>
-          <ul>
-            <li> list 1</li>
-            <li> list 1</li>
-            <li> list 1</li>
+          <p className="card-title">ingredients {ingredients.length}</p>
+          <ul className="-mt-2 ">
+          {
+            ingredients.map(li=><li key={li} >{li}</li>)
+          }
           </ul>
+          
+          
           <div className="flex justify-between items-center">
             <p>
               <FaRegClock /> {time} minutes{" "}

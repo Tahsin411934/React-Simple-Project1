@@ -1,17 +1,16 @@
 import PropTypes from "prop-types";
 
 
-const HandleWantToCookBtn = ({ wantToCookItems }) => {
+const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
  
 
 
- 
 
  
 
   return (
-    <div className="w-2/5">
-      <h1 className="text-xl font-bold text-center mb-8 pt-16">
+    <div >
+      <h1 className="text-xl font-bold text-center mb-8 ">
         Want To Cook{" "}
         {wantToCookItems.length > 10
           ? wantToCookItems.length
@@ -37,19 +36,25 @@ const HandleWantToCookBtn = ({ wantToCookItems }) => {
                 <td>{wantToCookItem.time} Minutes</td>
                 <td>{wantToCookItem.calories} calories</td>
                 <td>
-                  <button className="btn bg-[#0BE58A]">Preparing</button>
+                  <button onClick={()=>handleCokingBtn(wantToCookItem)} className="btn bg-[#0BE58A]">Preparing</button>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+
+      <h1 className="text-xl font-bold text-center mb-8 ">
+      Currently cooking: 02
+      </h1>
     </div>
+    
   );
 };
 
 HandleWantToCookBtn.propTypes = {
-  wantToCookItems: PropTypes.array,
+  wantToCookItems: PropTypes.array.isRequired,
+  handleCokingBtn: PropTypes.func.isRequired,
 };
 
 export default HandleWantToCookBtn;
