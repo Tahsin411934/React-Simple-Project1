@@ -13,6 +13,9 @@ function App() {
   const [wantToCookItems, setWantToCookItems] = useState([]);
   const [cookItems, setCookItems] = useState([]);
 
+
+
+
   const handleAddToCook = (recipe) => {
     const addwantToCookItems = [...wantToCookItems, recipe];
     const isExit = wantToCookItems.find((item) => item.id == recipe.id);
@@ -22,6 +25,12 @@ function App() {
       toast("Already added item!");
     }
   };
+
+
+  
+
+
+
 
   const handleCokingBtn = (wantToCookItem) => {
     setCookItems([...cookItems, wantToCookItem]);

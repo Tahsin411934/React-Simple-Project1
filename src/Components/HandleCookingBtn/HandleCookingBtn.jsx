@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types'
-
 const HandleCookingBtn = ({cookItems}) => {
-    
-    console.log(cookItems)
+
+  const totalTime = cookItems.reduce(( preTotal, cookItem) => preTotal + cookItem.time, 0);
+  const totalCalories = cookItems.reduce(( preTotalCalories, cookItem) => preTotalCalories + cookItem.calories, 0);
   return (
     <div>
+      <h1 className="text-xl font-bold text-center mb-8 ">
+      Currently cooking: {cookItems.length}
+      </h1>
       <table className="table">
-          {/* head */}
+         
           <thead>
             <tr>
               <th></th>
@@ -27,7 +30,8 @@ const HandleCookingBtn = ({cookItems}) => {
             ))}
             <td></td>
             <td></td>
-            <td>Total time= 420 Minutes</td>
+            <td>Total time= {totalTime} Minutes</td>
+            <td>Total time= {totalCalories} Calories</td>
           </tbody>
         </table>
     </div>

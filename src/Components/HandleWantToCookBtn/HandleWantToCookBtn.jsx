@@ -44,9 +44,7 @@ const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
         </table>
       </div>
 
-      <h1 className="text-xl font-bold text-center mb-8 ">
-      Currently cooking: 02
-      </h1>
+      
     </div>
     
   );
