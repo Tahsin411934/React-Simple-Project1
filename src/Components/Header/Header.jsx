@@ -3,7 +3,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import "../../assets/Styles/Header.css";
 const Header = () => {
   return (
-    <div className="navbar -mt-5 container mx-auto">
+    <div className="navbar -mt-5 container mx-auto w-[90%]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

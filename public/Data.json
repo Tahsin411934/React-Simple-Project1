@@ -65,35 +65,35 @@
     },
     {
       "id": 5,
-      "image": "https://i.ibb.co/zf07nSP/mixed-vegetable-curry-89572-1.jpg",
-      "title": "Vegetable Curry",
-      "description": "Hearty and flavorful vegetarian curry with mixed vegetables and aromatic spices.",
+      "image": "https://i.ibb.co/q7Vxv1n/download-3.jpg",
+      "title": "Mushroom Risotto",
+      "description": "Creamy Italian rice dish cooked with mushrooms and Parmesan cheese.",
       "ingredients": [
-        "2 potatoes, diced",
-        "1 cup cauliflower florets",
-        "1 cup green peas",
-        "1 carrot, diced",
+        "1 cup Arborio rice",
+        "200g mushrooms, sliced",
         "1 onion, chopped",
-        "2 tbsp curry powder"
+        "2 cloves garlic, minced",
+        "4 cups vegetable broth",
+        "1/2 cup grated Parmesan cheese"
       ],
-      "time": 35,
-      "calories": 280
+      "time": 40,
+      "calories": 300
     },
     {
       "id": 6,
-      "image": "https://i.ibb.co/zf07nSP/mixed-vegetable-curry-89572-1.jpg",
-      "title": "Vegetable Curry",
-      "description": "Hearty and flavorful vegetarian curry with mixed vegetables and aromatic spices.",
+      "image": "https://i.ibb.co/dWqB536/download-2.jpg",
+      "title": "Lemon Garlic Shrimp",
+      "description": "Delicious shrimp sautéed with garlic, lemon juice, and herbs.",
       "ingredients": [
-        "2 potatoes, diced",
-        "1 cup cauliflower florets",
-        "1 cup green peas",
-        "1 carrot, diced",
-        "1 onion, chopped",
-        "2 tbsp curry powder"
+        "500g large shrimp, peeled and deveined",
+        "3 cloves garlic, minced",
+        "1 lemon, juiced and zested",
+        "2 tbsp chopped parsley",
+        "2 tbsp olive oil",
+        "Salt and pepper to taste"
       ],
-      "time": 35,
-      "calories": 280
+      "time": 15,
+      "calories": 250
     }
   ]
   

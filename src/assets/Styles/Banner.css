@@ -1,13 +1,10 @@
 :root {
     --li-color: rgba(21, 11, 43, 0.7);
-    --navBtn-color: rgba(29, 209, 0, 0.4);
     --navSearchBg-color: rgba(21, 11, 43, 0.05);
-    --gradient-color1: rgba(3, 7, 18, 0.5);
-    --gradient-color2: rgba(3, 7, 18, 0);
-    --p-color: rgba(3, 7, 18, 0.6);
+   
 }
 
-.gra{
+.gradient{
     background-image: linear-gradient(to right, rgba(4, 0, 10, 0.9) , rgba(4, 0, 10, 1));
     
 }
