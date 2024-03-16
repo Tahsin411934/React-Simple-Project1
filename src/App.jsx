@@ -10,9 +10,18 @@ function App() {
   
   const [wantToCookItems, setWantToCookItems]=useState([])
 
+
   const handleAddToCook=(recipe)=>{
     const addwantToCookItems=[...wantToCookItems,recipe]
-    setWantToCookItems(addwantToCookItems)
+     const isExit=wantToCookItems.find(item=>item.id==recipe.id)
+     if (!isExit) {
+      setWantToCookItems(addwantToCookItems)
+     }
+     else{
+      alert('clicked same item')
+     }
+     
+    
   }
 console.log(wantToCookItems)
   return (
