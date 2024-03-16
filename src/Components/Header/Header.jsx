@@ -3,7 +3,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import "../../assets/Styles/Header.css";
 const Header = () => {
   return (
-    <div className="navbar -mt-5 container mx-auto w-[90%]">
+    <div className="navbar lg:-mt-5 container mx-auto w-[90%]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,7 +41,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <h1 className="text-4xl font-bold text-[#150B2B]">Kitchen Kick</h1>
+        <h1 className="lg:text-4xl text-2xl font-bold text-[#150B2B]">Kitchen Kick</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[--li-color] text-lg font-normal">

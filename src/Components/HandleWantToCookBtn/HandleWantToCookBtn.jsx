@@ -20,7 +20,7 @@ const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
         <table className="table">
           {/* head */}
           <thead>
-            <tr>
+            <tr className="text-base font-medium text-[#878787]">
               <th></th>
               <th>Name</th>
               <th>Time</th>
@@ -30,13 +30,13 @@ const HandleWantToCookBtn = ({ wantToCookItems ,handleCokingBtn }) => {
           <tbody>
             {wantToCookItems.map((wantToCookItem, index) => (
               
-              <tr key={wantToCookItem.id} className="bg-base-200">
+              <tr key={wantToCookItem.id} className="bg-base-200 text-base font-normal" style={{color:"rgba(40, 40, 40, 0.7)"}}>
                 <th>{index + 1}</th>
                 <td>{wantToCookItem.title}</td>
                 <td>{wantToCookItem.time} Minutes</td>
                 <td>{wantToCookItem.calories} calories</td>
                 <td>
-                  <button onClick={()=>handleCokingBtn(wantToCookItem)} className="btn bg-[#0BE58A]">Preparing</button>
+                  <button onClick={()=>handleCokingBtn(wantToCookItem)} className="btn bg-[#0BE58A] text-[#150B2B] border-none">Cooking</button>
                 </td>
               </tr>
             ))}
