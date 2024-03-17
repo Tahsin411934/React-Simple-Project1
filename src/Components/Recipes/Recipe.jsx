@@ -35,6 +35,7 @@ const Recipe = ({ recipe, handleAddToCook }) => {
               <li key={li}>{li}</li>
             ))}
           </ul>
+          <hr className="w-[100%] border-solid border-b  border-[#2828281A] " />
           <div className="flex justify-around font-normal text-lg text-[#878787]">
             <p>
               <FaRegClock /> {time} minutes
