@@ -65,7 +65,7 @@ const Header = () => {
       <div className="navbar-end">
         <div className="input h-[100%] bg-[--navSearchBg-color] p-2 lg:flex justify-center items-center mr-3 hidden">
           <div className="-mb-1">
-            {" "}
+            
             <IoSearch />
           </div>
           <input

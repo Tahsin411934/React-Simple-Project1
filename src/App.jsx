@@ -20,7 +20,7 @@ function App() {
     if (!isExit) {
       setWantToCookItems(addwantToCookItems);
     } else {
-      toast("Already added item!");
+      toast.warn("Already added item!");
     }
   };
 
@@ -52,7 +52,7 @@ function App() {
           <HandleCookingBtn  cookItems={cookItems}  ></HandleCookingBtn>
         </div>
       </div>
-      <ToastContainer></ToastContainer>
+      <ToastContainer theme="dark"></ToastContainer>
     </>
   );
 }

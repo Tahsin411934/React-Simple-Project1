@@ -2,23 +2,27 @@
 import PropTypes from "prop-types";
 import { FaRegClock } from "react-icons/fa";
 import { MdOutlineLocalFireDepartment } from "react-icons/md";
+import '../../assets/Styles/Recipe.css'
 
 const Recipe = ({ recipe, handleAddToCook }) => {
   //destucturing
   const { image, name, description, ingredients, time, calories } = recipe;
 
-  //return our recipes section every card
+  //return our recipes section's card
   return (
     <div
-      style={{ border: "1px solid rgba(40, 40, 40, 0.2);" }}
-      className="mb-4"
+      
+      className="mb-4  "
     >
-      <div className="card card-compact w-[100%] bg-base-100 shadow-xl">
-        <img
-          className="w-[100%] h-[12rem] mx-auto rounded-2xl"
+      <div className="card card-compact w-[100%] bg-slate-50 shadow-2xl  ">
+        <div className="w-[95%] mx-auto pt-3">
+        <img 
+          className="w-[100%] h-[12rem] mx-auto rounded-2xl "
           src={image}
           alt="Food Item Image"
         />
+        </div>
+       
         <div className="card-body">
           <h2 className="card-title text-[#282828]">{name}</h2>
           <p className="text-[#878787] text-base font-normal ">{description}</p>
@@ -33,7 +37,7 @@ const Recipe = ({ recipe, handleAddToCook }) => {
           </ul>
           <div className="flex justify-around font-normal text-lg text-[#878787]">
             <p>
-              <FaRegClock /> {time} minutes{" "}
+              <FaRegClock /> {time} minutes
             </p>
             <div className="flex justify-center items-center gap-1">
               <MdOutlineLocalFireDepartment />
